@@ -19,20 +19,25 @@ describe ("Prueba de jest", () =>{
         expect (user.lastUpdate).not.toBeUndefined()
     });
 
-    /* test ("Requerimiento 2: Fechas en atributos de user", () =>{
+    test ("Requerimiento 2: Fechas en atributos de user", () =>{
         const user = new User (1,"carlogilmar","carlo","bio")
         expect (user.dateCreated).not.toBeUndefined()
         expect (user.lastUpdate).not.toBeUndefined()
 
     })
     test ("Requerimiento 3: Agregando getters", () =>{
-        const user = new User (1,"carlogilmar","carlo","bio")
-        expect (user.getUsername).toBe ("DanielaZ")
+        const user = new User (1,"carlogilmar","carlo","Bio")
+        expect (user.getUsername).toBe ("carlogilmar")
+        expect (user.getbio).toBe ("Bio")
+        expect (user.getdateCreated).not.toBeUndefined()
+        expect (user.getlastUpdate).not.toBeUndefined()
+
+
 
     })
-    test ("Requerimiento 4 : Agregando setters", () =>{
+    /* test ("Requerimiento 4 : Agregando setters", () =>{
         const user = new User (1,"carlogilmar","carlo","bio")
         user.setUserName = "cgilmar"
         expect(user.username).toBe ("cgilmar")
     }); */
-})
+}) 
