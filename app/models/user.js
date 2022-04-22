@@ -22,9 +22,12 @@ class User{
     get getlastUpdate(){
         return this.lastUpdate
     }
-    /* set setUsername (newUserName){
+    set setUsername (newUserName){
         this.username = newUserName
-    } */
+    }
+    set setBio(newBio){
+        this.bio = newBio
+    }
     
 
 }

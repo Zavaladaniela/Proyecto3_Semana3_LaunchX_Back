@@ -31,13 +31,13 @@ describe ("Prueba de jest", () =>{
         expect (user.getbio).toBe ("Bio")
         expect (user.getdateCreated).not.toBeUndefined()
         expect (user.getlastUpdate).not.toBeUndefined()
-
-
-
     })
-    /* test ("Requerimiento 4 : Agregando setters", () =>{
+    test ("Requerimiento 4 : Agregando setters", () =>{
         const user = new User (1,"carlogilmar","carlo","bio")
-        user.setUserName = "cgilmar"
-        expect(user.username).toBe ("cgilmar")
-    }); */
+        user.setUserName = "carlogilmar"
+        expect(user.username).toBe ("carlogilmar")
+
+        user.setBio = "New Bio"
+        expect(user.bio).toBe("New Bio")
+    });
 }) 
