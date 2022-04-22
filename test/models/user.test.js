@@ -15,7 +15,7 @@ describe ("Prueba de jest", () =>{
         expect (user.username).toBe("DanielaZ")
         expect (user.name).toBe("Dany")
         expect (user.bio).toBe ("Bio")
-        expect (user.dateCreated).not.toBeUndefined ()
+        expect (user.dateCreated).not.toBeUndefined()
         expect (user.lastUpdate).not.toBeUndefined()
     });
 
