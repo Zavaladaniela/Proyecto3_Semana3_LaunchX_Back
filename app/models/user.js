@@ -1,21 +1,22 @@
-class user{
-    constructor (id,username,name,bio){
+
+class User{
+    constructor (id,username,name,bio,dateCreated,lastUpdate){
         this.id = id
         this.username = username
         this.name = name
         this.bio = bio
-        this.dateCreated = new dateCreated()
-        this. lastUpdate = new lastUpdate ()
+        this.dateCreated = dateCreated
+        this. lastUpdate = lastUpdate 
     }
 
-    get getUsername(){
+   /*  get getUsername(){
         return this.username
     }
-    set setUserName (newUserName){
+    set setUsername (newUserName){
         this.username = newUserName
-    }
+    } */
     
 
 }
 
-module.exports = user
+module.exports = User
